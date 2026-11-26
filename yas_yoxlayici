@@ -1,0 +1,18 @@
+ad= input("Adınızı girin: ")
+
+while True:
+    yas = input("Yaşınızı girin: ")
+
+    if yas.isdigit():
+        yas = int(yas)
+        if 0< yas <= 130:
+            break
+        else:
+            print("Yaşınızı daxil edin, yaşamaq istədiyini deyil")
+    else:
+        print("Rəqəm daxil et!")
+
+if yas >= 18:
+    print ( "Salam " + ad + " siz yetkinsiniz :)")
+elif yas < 18:
+    print ("Salam " + ad + " siz hələ yetkin deyilsiniz :(")
